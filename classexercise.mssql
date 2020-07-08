@@ -1,0 +1,43 @@
+SELECT * FROM appdata
+
+UPDATE appdata
+SET developer = 'Brad Pitt'
+WHERE id =1;
+
+DELETE FROM appdata
+WHERE developer = 'Brad Pitt';
+
+SELECT appname
+FROM appdata; 
+
+SELECT DISTINCT appcat
+FROM appdata
+
+SELECT * FROM appdata
+WHERE total_rev > 1000
+OR investment < 1000;
+
+SELECT *
+FROM appdata
+WHERE appdata LIKE 'v%';
+
+SELECT *
+FROM appdata
+WHERE developer LIKE '% T%';
+
+SELECT *
+FROM appdata
+WHERE appname BETWEEN 'A' and 'H';
+
+SELECT * 
+FROM appdata
+WHERE update_date BETWEEN '2020-01-01' and '2020-07-08'
+
+SELECT appname, appcat
+FROM appdata
+ORDER BY appname ASC;
+
+SELECT appname, appcat
+FROM appdata
+ORDER BY appname ASC
+LIMIT 10;
